@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishant</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <svg xmlns="http://www.w3.org/2000/svg" onclick=showslidebar() class="icon"   height="30"  viewBox="0 -960 960 960" width="30"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+            <div class="left"> Dishant saini</div>
+            <div class="right">
+                <ul class="slidebar">
+                    <li> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" onclick=hideslidebar() class="close"   height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">About</a> </li>
+                    <li><a href="#">Skill</a> </li>
+                    <li><a href="#">contect</a> </li>
+                </ul>
+                <ul>
+                    <li class="hideslidebar"><a href="#home" class="anchor">Home</a> </li>
+                    <li class="hideslidebar"><a href="#About" class="anchor">About</a> </li>
+                    <li class="hideslidebar"><a href="#skills" class="anchor">Skill</a> </li>
+                    <li class="hideslidebar"><a href="#contect" class="anchor">contect</a> </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home" id="home">
+            <div class="leftsection">
+                Hi, My name is <span class="color">Dishant </span>
+                <div> I am a <span class="color">FullStack</span> </div>
+                <!-- <div>Web Developer</div> -->
+                <span id="Typed"></span>
+
+            </div>
+            <div class="rightsection">
+                <img src="bg.png.png" alt="">
+            </div>
+        </section>
+        <hr class="homehr">
+        <!--    This is Second Section About ME     -->
+
+
+        <section class="About" id="About">
+            <h1 class="heading" id="heading"><span>About</span><span class="me">-Me</span></h1>
+            <div class="aboutme">
+                <div class="leftabout"><p>Dishant: Aspiring MCA developer, <br>crafting captivating experiences <br> with
+                    Java, HTML/CSS, JavaScript, <br>and frameworks like Bootstrap. <br> Node.js and Express.js fuel my
+                    <br>back-end, while my passion lies <br>in building impactful projects. <br> Let's collaborate!</p>
+                </div>
+                <!-- <div class="leftaboutcopy"> Dishant: Aspiring MCA developer, crafting captivating experiences  with
+                    Java, HTML/CSS, JavaScript, and frameworks like Bootstrap.  Node.js and Express.js fuel my
+                    back-end, while my passion lies in building impactful projects.  Let's collaborate!
+                </div> -->
+                <div class="rightabout"> <img src="crop.jpg" alt=""></div>
+            </div>
+        </section>
+        <hr class="abouthr">
+        <section class="skills">
+            <div class="myskills">
+                
+            </div>
+        </section>
+
+        <section class="skiils" id="skills">
+            <div>
+                <h1>skills</h1>
+                <div class="html">HTML(90%)</div>
+                <div class="css">css(75%)</div>
+                <div class="javascript">javascript(50%)</div>
+                <div class="java">java(75%)</div>
+                <!-- <div class="nodejs">nodejs(60%)</div> -->
+               
+            </div>
+            <div class="card"><img src="html.jpg" alt="" class="imgc"></div>
+            <div class="card"><img src="css.jpg" alt=""class="imgc"></div>
+            <div class="card"><img src="javascript1.jpg"class="imgc" alt=""></div>
+            <div class="card"><img src="java.jpg" alt=""class="imgc"></div>
+
+        </section>
+        <hr class="skillhr">
+        <section class="contect" id="contect">
+            <h1 class="contecth1">contect</h1>
+            <div class="contectd">
+                <form>
+                <h1>contect</h1>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <input type="text" id="number" placeholder="Enter your number" required>
+                <input type="email" placeholder="Enter your mail" id="email" required>
+                <textarea name="message" id="message"  rows="4" placeholder="Feedback"></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+<!-- 
+            <div class="touch">
+                <h3>Get in touch</h3>
+
+            </div> -->
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
